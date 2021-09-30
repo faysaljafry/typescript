@@ -6,7 +6,7 @@ function loaduser() {
   let index = 1;
   if (dataBase != null) {
     let table = document
-      .getElementById("employeeList")
+      .getElementById("employeeList")!
       .getElementsByTagName("tbody")[0];
     table.innerHTML = "";
     for (index = 0; index < dataBase.length; index++) {

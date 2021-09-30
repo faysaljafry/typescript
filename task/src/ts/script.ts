@@ -177,235 +177,235 @@ function search() {
   }
 }
 
-// function sortname() {
-//   let sorted = dataBase.sort(sortNameasc);
-//   dataBase = sorted;
-//   console.log(dataBase);
-//   localStorage.clear();
-//   localStorage.setItem("pastRecords", JSON.stringify(dataBase));
+function sortname() {
+  let sorted = dataBase.sort(sortNameasc);
+  dataBase = sorted;
+  console.log(dataBase);
+  localStorage.clear();
+  localStorage.setItem("pastRecords", JSON.stringify(dataBase));
 
-//   let table = document
-//     .getElementById("employeeList")
-//     .getElementsByTagName("tbody")[0];
-//   let i;
-//   //console.log(dataBase.length);
+  let table = document
+    .getElementById("employeeList")!
+    .getElementsByTagName("tbody")[0];
+  let i;
+  //console.log(dataBase.length);
 
-//   loaduser();
-// }
-// function sortnamedesc() {
-//   let sorted = dataBase.sort(sortNamedesc);
-//   dataBase = sorted;
-//   console.log(dataBase);
-//   localStorage.clear();
-//   localStorage.setItem("pastRecords", JSON.stringify(dataBase));
+  loaduser();
+}
+function sortnamedesc() {
+  let sorted = dataBase.sort(sortNamedesc);
+  dataBase = sorted;
+  console.log(dataBase);
+  localStorage.clear();
+  localStorage.setItem("pastRecords", JSON.stringify(dataBase));
 
-//   let table = document
-//     .getElementById("employeeList")
-//     .getElementsByTagName("tbody")[0];
-//   let i;
-//   //console.log(dataBase.length);
+  let table = document
+    .getElementById("employeeList")!
+    .getElementsByTagName("tbody")[0];
+  let i;
+  //console.log(dataBase.length);
 
-//   loaduser();
-// }
+  loaduser();
+}
 
-// function sortNameasc(a, b) {
-//   console.log("In sort by name function");
-//   const bandA = a.firstName.toUpperCase();
-//   const bandB = b.firstName.toUpperCase();
+function sortNameasc(a: any, b: any) {
+  console.log("In sort by name function");
+  const bandA = a.firstName.toUpperCase();
+  const bandB = b.firstName.toUpperCase();
 
-//   let comparison = 0;
-//   if (bandA > bandB) {
-//     comparison = 1;
-//   } else if (bandA < bandB) {
-//     comparison = -1;
-//   }
-//   return comparison;
-// }
-// function sortNamedesc(a, b) {
-//   console.log("In sort by name function");
-//   const bandA = a.firstName.toUpperCase();
-//   const bandB = b.firstName.toUpperCase();
+  let comparison = 0;
+  if (bandA > bandB) {
+    comparison = 1;
+  } else if (bandA < bandB) {
+    comparison = -1;
+  }
+  return comparison;
+}
+function sortNamedesc(a: any, b: any) {
+  console.log("In sort by name function");
+  const bandA = a.firstName.toUpperCase();
+  const bandB = b.firstName.toUpperCase();
 
-//   let comparison = 0;
-//   if (bandA < bandB) {
-//     comparison = 1;
-//   } else if (bandA > bandB) {
-//     comparison = -1;
-//   }
-//   return comparison;
-// }
+  let comparison = 0;
+  if (bandA < bandB) {
+    comparison = 1;
+  } else if (bandA > bandB) {
+    comparison = -1;
+  }
+  return comparison;
+}
 
-// function sortLname() {
-//   let sorted = dataBase.sort(sortLnameasc);
-//   dataBase = sorted;
-//   console.log(dataBase);
-//   localStorage.clear();
-//   localStorage.setItem("pastRecords", JSON.stringify(dataBase));
+function sortLname() {
+  let sorted = dataBase.sort(sortLnameasc);
+  dataBase = sorted;
+  console.log(dataBase);
+  localStorage.clear();
+  localStorage.setItem("pastRecords", JSON.stringify(dataBase));
 
-//   let table = document
-//     .getElementById("employeeList")
-//     .getElementsByTagName("tbody")[0];
-//   let i;
-//   //console.log(dataBase.length);
+  let table = document
+    .getElementById("employeeList")!
+    .getElementsByTagName("tbody")[0];
+  let i;
+  //console.log(dataBase.length);
 
-//   loaduser();
-// }
-// function sortLnameasc(a, b) {
-//   console.log("In sort by name function");
-//   const bandA = a.lastName.toUpperCase();
-//   const bandB = b.lastName.toUpperCase();
+  loaduser();
+}
+function sortLnameasc(a: any, b: any) {
+  console.log("In sort by name function");
+  const bandA = a.lastName.toUpperCase();
+  const bandB = b.lastName.toUpperCase();
 
-//   let comparison = 0;
-//   if (bandA > bandB) {
-//     comparison = 1;
-//   } else if (bandA < bandB) {
-//     comparison = -1;
-//   }
-//   return comparison;
-// }
+  let comparison = 0;
+  if (bandA > bandB) {
+    comparison = 1;
+  } else if (bandA < bandB) {
+    comparison = -1;
+  }
+  return comparison;
+}
 
-// function sortLnamedesc() {
-//   let sorted = dataBase.sort(sortLnameDesc);
-//   dataBase = sorted;
-//   console.log(dataBase);
-//   localStorage.clear();
-//   localStorage.setItem("pastRecords", JSON.stringify(dataBase));
+function sortLnamedesc() {
+  let sorted = dataBase.sort(sortLnameDesc);
+  dataBase = sorted;
+  console.log(dataBase);
+  localStorage.clear();
+  localStorage.setItem("pastRecords", JSON.stringify(dataBase));
 
-//   let table = document
-//     .getElementById("employeeList")
-//     .getElementsByTagName("tbody")[0];
-//   let i;
-//   //console.log(dataBase.length);
+  let table = document
+    .getElementById("employeeList")!
+    .getElementsByTagName("tbody")[0];
+  let i;
+  //console.log(dataBase.length);
 
-//   loaduser();
-// }
+  loaduser();
+}
 
-// function sortLnameDesc(a, b) {
-//   console.log("In sort by name function");
-//   const bandA = a.lastName.toUpperCase();
-//   const bandB = b.lastName.toUpperCase();
+function sortLnameDesc(a: any, b: any) {
+  console.log("In sort by name function");
+  const bandA = a.lastName.toUpperCase();
+  const bandB = b.lastName.toUpperCase();
 
-//   let comparison = 0;
-//   if (bandA < bandB) {
-//     comparison = 1;
-//   } else if (bandA > bandB) {
-//     comparison = -1;
-//   }
-//   return comparison;
-// }
+  let comparison = 0;
+  if (bandA < bandB) {
+    comparison = 1;
+  } else if (bandA > bandB) {
+    comparison = -1;
+  }
+  return comparison;
+}
 
-// function sortemail() {
-//   let sorted = dataBase.sort(sortEmailAsc);
-//   dataBase = sorted;
-//   console.log(dataBase);
-//   localStorage.clear();
-//   localStorage.setItem("pastRecords", JSON.stringify(dataBase));
+function sortemail() {
+  let sorted = dataBase.sort(sortEmailAsc);
+  dataBase = sorted;
+  console.log(dataBase);
+  localStorage.clear();
+  localStorage.setItem("pastRecords", JSON.stringify(dataBase));
 
-//   let table = document
-//     .getElementById("employeeList")
-//     .getElementsByTagName("tbody")[0];
-//   let i;
-//   //console.log(dataBase.length);
+  let table = document
+    .getElementById("employeeList")!
+    .getElementsByTagName("tbody")[0];
+  let i;
+  //console.log(dataBase.length);
 
-//   loaduser();
-// }
-// function sortEmailAsc(a, b) {
-//   console.log("In sort by name function");
-//   const bandA = a.email.toUpperCase();
-//   const bandB = b.email.toUpperCase();
+  loaduser();
+}
+function sortEmailAsc(a: any, b: any) {
+  console.log("In sort by name function");
+  const bandA = a.email.toUpperCase();
+  const bandB = b.email.toUpperCase();
 
-//   let comparison = 0;
-//   if (bandA > bandB) {
-//     comparison = 1;
-//   } else if (bandA < bandB) {
-//     comparison = -1;
-//   }
-//   return comparison;
-// }
+  let comparison = 0;
+  if (bandA > bandB) {
+    comparison = 1;
+  } else if (bandA < bandB) {
+    comparison = -1;
+  }
+  return comparison;
+}
 
-// function sortemaildesc() {
-//   let sorted = dataBase.sort(sortEmailDesc);
-//   dataBase = sorted;
-//   console.log(dataBase);
-//   localStorage.clear();
-//   localStorage.setItem("pastRecords", JSON.stringify(dataBase));
+function sortemaildesc() {
+  let sorted = dataBase.sort(sortEmailDesc);
+  dataBase = sorted;
+  console.log(dataBase);
+  localStorage.clear();
+  localStorage.setItem("pastRecords", JSON.stringify(dataBase));
 
-//   let table = document
-//     .getElementById("employeeList")
-//     .getElementsByTagName("tbody")[0];
-//   let i;
-//   //console.log(dataBase.length);
+  let table = document
+    .getElementById("employeeList")!
+    .getElementsByTagName("tbody")[0];
+  let i;
+  //console.log(dataBase.length);
 
-//   loaduser();
-// }
-// function sortEmailDesc(a, b) {
-//   console.log("In sort by name function");
-//   const bandA = a.email.toUpperCase();
-//   const bandB = b.email.toUpperCase();
+  loaduser();
+}
+function sortEmailDesc(a: any, b: any) {
+  console.log("In sort by name function");
+  const bandA = a.email.toUpperCase();
+  const bandB = b.email.toUpperCase();
 
-//   let comparison = 0;
-//   if (bandA < bandB) {
-//     comparison = 1;
-//   } else if (bandA > bandB) {
-//     comparison = -1;
-//   }
-//   return comparison;
-// }
+  let comparison = 0;
+  if (bandA < bandB) {
+    comparison = 1;
+  } else if (bandA > bandB) {
+    comparison = -1;
+  }
+  return comparison;
+}
 
-// function sortaddress() {
-//   let sorted = dataBase.sort(sortAddressAsc);
-//   dataBase = sorted;
-//   console.log(dataBase);
-//   localStorage.clear();
-//   localStorage.setItem("pastRecords", JSON.stringify(dataBase));
+function sortaddress() {
+  let sorted = dataBase.sort(sortAddressAsc);
+  dataBase = sorted;
+  console.log(dataBase);
+  localStorage.clear();
+  localStorage.setItem("pastRecords", JSON.stringify(dataBase));
 
-//   let table = document
-//     .getElementById("employeeList")
-//     .getElementsByTagName("tbody")[0];
-//   let i;
-//   //console.log(dataBase.length);
+  let table = document
+    .getElementById("employeeList")!
+    .getElementsByTagName("tbody")[0];
+  let i;
+  //console.log(dataBase.length);
 
-//   loaduser();
-// }
-// function sortAddressAsc(a, b) {
-//   console.log("In sort by name function");
-//   const bandA = a.address.toUpperCase();
-//   const bandB = b.address.toUpperCase();
+  loaduser();
+}
+function sortAddressAsc(a: any, b: any) {
+  console.log("In sort by name function");
+  const bandA = a.address.toUpperCase();
+  const bandB = b.address.toUpperCase();
 
-//   let comparison = 0;
-//   if (bandA > bandB) {
-//     comparison = 1;
-//   } else if (bandA < bandB) {
-//     comparison = -1;
-//   }
-//   return comparison;
-// }
+  let comparison = 0;
+  if (bandA > bandB) {
+    comparison = 1;
+  } else if (bandA < bandB) {
+    comparison = -1;
+  }
+  return comparison;
+}
 
-// function sortaddressdesc() {
-//   let sorted = dataBase.sort(sortAddressDesc);
-//   dataBase = sorted;
-//   console.log(dataBase);
-//   localStorage.clear();
-//   localStorage.setItem("pastRecords", JSON.stringify(dataBase));
+function sortaddressdesc() {
+  let sorted = dataBase.sort(sortAddressDesc);
+  dataBase = sorted;
+  console.log(dataBase);
+  localStorage.clear();
+  localStorage.setItem("pastRecords", JSON.stringify(dataBase));
 
-//   let table = document
-//     .getElementById("employeeList")
-//     .getElementsByTagName("tbody")[0];
-//   let i;
-//   //console.log(dataBase.length);
+  let table = document
+    .getElementById("employeeList")!
+    .getElementsByTagName("tbody")[0];
+  let i;
+  //console.log(dataBase.length);
 
-//   loaduser();
-// }
-// function sortAddressDesc(a, b) {
-//   console.log("In sort by name function");
-//   const bandA = a.address.toUpperCase();
-//   const bandB = b.address.toUpperCase();
+  loaduser();
+}
+function sortAddressDesc(a: any, b: any) {
+  console.log("In sort by name function");
+  const bandA = a.address.toUpperCase();
+  const bandB = b.address.toUpperCase();
 
-//   let comparison = 0;
-//   if (bandA < bandB) {
-//     comparison = 1;
-//   } else if (bandA > bandB) {
-//     comparison = -1;
-//   }
-//   return comparison;
-// }
+  let comparison = 0;
+  if (bandA < bandB) {
+    comparison = 1;
+  } else if (bandA > bandB) {
+    comparison = -1;
+  }
+  return comparison;
+}

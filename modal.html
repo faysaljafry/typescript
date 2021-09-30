@@ -1,0 +1,84 @@
+<!--Modal Body-->
+<div
+  class="modal text-center fade"
+  id="CRUDModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="CRUDModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="CRUDModaltitlle">
+          Add or Update An Employee
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--Main Form Body in Modal-->
+      <div class="modal-body">
+        <div class="row">
+          <div class="container mt-1">
+            <div class="container mt-1">
+              <form
+                id="EmpForm"
+                class="needs-validation"
+                onsubmit="onFormSubmit(); return false"
+              >
+                <div class="row mt-5">
+                  <div class="col">
+                    <label>First Name:</label>
+                  </div>
+                  <div class="col">
+                    <input type="text" id="firstName" required />
+                  </div>
+                </div>
+                <div class="row mt-2">
+                  <div class="col">
+                    <label>Last Name:</label>
+                  </div>
+                  <div class="col">
+                    <input id="lastName" type="text" required />
+                  </div>
+                </div>
+
+                <div class="row mt-2">
+                  <div class="col">
+                    <label>Email ID</label>
+                  </div>
+                  <div class="col">
+                    <input id="email" type="text" required />
+                  </div>
+                </div>
+
+                <div class="row mt-2">
+                  <div class="col">
+                    <label>Address</label>
+                  </div>
+                  <div class="col">
+                    <input id="address" type="text" required />
+                  </div>
+                </div>
+                <div class="modal-footer mt-3">
+                  <button class="btn btn-primary" type="submit">
+                    Save Changes
+                  </button>
+                  <button class="btn btn-danger" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

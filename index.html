@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript CRUD Example Tutorial</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="./task/src/js/script.js"></script>
+    <script>
+      $(function () {
+        $("#modalPopup").load("modal.html");
+      });
+      // $("#modalPopup").on("click", function () {
+      //   load("modal.html");
+      // });
+    </script>
+  </head>
+  <body>
+    <!--Header and Modal trigger Button-->
+    <div class="text-center">
+      <h1 class="text-primary">Cube Technologies Employee Record</h1>
+    </div>
+
+    <div class="text-center">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#CRUDModal"
+      >
+        Add Record
+      </button>
+    </div>
+    <!--Search code -->
+    <div class="row justify-content-center mt-3">
+      <div class="col-12 col-md-10 col-lg-8">
+        <form class="card card-sm">
+          <div
+            class="card-body row no-gutters align-items-center bg-dark rounded"
+          >
+            <!--end of col-->
+            <div class="col">
+              <input
+                id="myInput"
+                class="form-control form-control-lg form-control-borderless"
+                onkeyup="search()"
+                type="search"
+                placeholder="Search for names"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--end of col-->
+    </div>
+
+    <div id="modalPopup"></div>
+    <div class="mt-5 mx-3 px-3">
+      <table class="table table-striped" id="employeeList">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">
+              <div class="row">
+                <div class="col-10">First Name</div>
+                <div class="col-1">
+                  <div class="row">
+                    <i class="fa fa-sort-up" onclick="sortname()"></i>
+                  </div>
+                  <div class="row">
+                    <i class="fa fa-sort-down" onclick="sortnamedesc()"></i>
+                  </div>
+                </div>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="row">
+                <div class="col-10">Last Name</div>
+                <div class="col-1">
+                  <div class="row">
+                    <i class="fa fa-sort-up" onclick="sortLname()"></i>
+                  </div>
+                  <div class="row">
+                    <i class="fa fa-sort-down" onclick="sortLnamedesc()"></i>
+                  </div>
+                </div>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="row">
+                <div class="col-10">Email ID</div>
+                <div class="col-1">
+                  <div class="row">
+                    <i class="fa fa-sort-up" onclick="sortemail()"></i>
+                  </div>
+                  <div class="row">
+                    <i class="fa fa-sort-down" onclick="sortemaildesc()"></i>
+                  </div>
+                </div>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="row">
+                <div class="col-10">Address</div>
+                <div class="col-1">
+                  <div class="row">
+                    <i class="fa fa-sort-up" onclick="sortaddress()"></i>
+                  </div>
+                  <div class="row">
+                    <i class="fa fa-sort-down" onclick="sortaddressdesc()"></i>
+                  </div>
+                </div>
+              </div>
+            </th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="notFound" class="d-none">
+        <h1 class="text-secondary text-center">No items to show</h1>
+      </div>
+    </div>
+    <script src="./task/src/js/load.js"></script>
+  </body>
+</html>
